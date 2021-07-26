@@ -19,7 +19,7 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
     this.storeService.myCart$.subscribe(products => {
       this.counter = products.length;
-    })
+    });
   }
 
   toggleMenu() {
